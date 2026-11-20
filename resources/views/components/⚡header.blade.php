@@ -38,7 +38,7 @@ new class extends Component
                     $isActive = request()->routeIs($menu['active']);
                 @endphp
                 <a 
-                    href="{{ route($menu['route']) }}" 
+                    href="{{ Route($menu['route']) }}" 
                     wire:navigate
                     @class([
                         'pb-1 border-b-2 transition-colors',
