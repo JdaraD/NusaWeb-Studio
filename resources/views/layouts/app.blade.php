@@ -15,7 +15,7 @@
         @livewire('header')
 
         <!-- 2. KONTEN UTAMA -->
-        <main class="mt-4 w-full flex-1">
+        <main class="w-full flex-1">
             {{ $slot }} <!-- Halaman Livewire User Masuk Di Sini -->
         </main>
 
