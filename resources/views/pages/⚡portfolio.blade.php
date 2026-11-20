@@ -131,7 +131,7 @@ new class extends Component
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
                                 <!-- Isi Mini UI -->
-                                <div class="p-3 bg-slate-50/70 grid grid-cols-12 gap-2.5 items-stretch min-h-[126px]">
+                                <div class="p-3 bg-slate-50/70 grid grid-cols-12 gap-2.5 items-stretch min-h-31.5">
                                     <div class="col-span-7 flex flex-col justify-between">
                                         <div>
                                             <span class="block text-[7px] font-semibold text-[#138A63] mb-1">Architectural Profile</span>
@@ -204,7 +204,7 @@ new class extends Component
                                     <span class="text-[8px] text-slate-300 truncate">Karya Commerce Retail Storefront</span>
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
-                                <div class="p-3 bg-slate-50/70 min-h-[126px] flex flex-col justify-between">
+                                <div class="p-3 bg-slate-50/70 min-h-31.5 flex flex-col justify-between">
                                     <div class="flex items-center justify-between mb-2">
                                         <span class="text-[9px] font-bold text-[#16375b]">Karya Storefront</span>
                                         <span class="bg-emerald-50 text-[#138A63] border border-emerald-200/60 text-[7px] font-semibold px-1.5 py-0.5 rounded">Bag (2)</span>
@@ -272,7 +272,7 @@ new class extends Component
                                     <span class="text-[8px] text-slate-300 truncate">Surya Cloud Product Launch Page</span>
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
-                                <div class="p-3 bg-slate-50/70 min-h-[126px] flex flex-col justify-between">
+                                <div class="p-3 bg-slate-50/70 min-h-31.5 flex flex-col justify-between">
                                     <div>
                                         <span class="block text-[7px] font-semibold text-[#138A63] mb-1">Cloud Infrastructure</span>
                                         <p class="text-[11px] font-bold text-[#16375b] leading-tight mb-1">
@@ -333,7 +333,7 @@ new class extends Component
                                     <span class="text-[8px] text-slate-300 truncate">FlowDesk Operations Web Portal</span>
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
-                                <div class="p-2.5 bg-slate-50/70 grid grid-cols-12 gap-2 min-h-[126px]">
+                                <div class="p-2.5 bg-slate-50/70 grid grid-cols-12 gap-2 min-h-31.5">
                                     <!-- Sidebar -->
                                     <div class="col-span-4 bg-white border border-slate-200/70 rounded p-1.5 space-y-1 text-[7px]">
                                         <div class="px-1.5 py-0.5 text-slate-400">Overview</div>
@@ -408,7 +408,7 @@ new class extends Component
                                     <span class="text-[8px] text-slate-300 truncate">Metrika BI Control Suite</span>
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
-                                <div class="p-2.5 bg-slate-50/70 min-h-[126px] flex flex-col justify-between gap-2">
+                                <div class="p-2.5 bg-slate-50/70 min-h-31.5 flex flex-col justify-between gap-2">
                                     <!-- Top KPIs -->
                                     <div class="grid grid-cols-3 gap-1.5">
                                         <div class="bg-white border border-slate-200/70 rounded p-1.5">
@@ -481,7 +481,7 @@ new class extends Component
                                     <span class="text-[8px] text-slate-300 truncate">NusaPay Field Companion App</span>
                                     <span class="text-[7px] font-semibold tracking-wider uppercase bg-white/10 text-slate-200 px-1.5 py-0.5 rounded shrink-0">CONCEPT</span>
                                 </div>
-                                <div class="p-3 bg-slate-50/70 min-h-[126px] flex items-center justify-center gap-3">
+                                <div class="p-3 bg-slate-50/70 min-h-31.5 flex items-center justify-center gap-3">
                                     <!-- Mobile Screen 1 -->
                                     <div class="w-24 bg-white border-2 border-[#123456] rounded-xl p-2 flex flex-col justify-between h-24 shadow-2xs">
                                         <div>
