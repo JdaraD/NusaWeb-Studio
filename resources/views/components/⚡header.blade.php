@@ -4,7 +4,16 @@ use Livewire\Component;
 
 new class extends Component
 {
-    //
+    public function menus(): array
+    {
+        return [
+            ['label' => 'Home', 'route' => 'beranda', 'active' => 'beranda'],
+            ['label' => 'About', 'route' => 'about', 'active' => 'about'],
+            ['label' => 'Services', 'route' => 'services', 'active' => 'services*'],
+            ['label' => 'Portfolio', 'route' => 'portfolio', 'active' => 'portfolio*'],
+            ['label' => 'Contact', 'route' => 'contact', 'active' => 'contact'],
+        ];
+    }
 };
 ?>
 
@@ -12,7 +21,7 @@ new class extends Component
     <div class="flex w-[84%] h-full items-center justify-between">
         
         <!-- 01: Logo & Brand -->
-        <a href="#" class="flex gap-3 items-center h-full w-auto">
+        <a href="{{ route('beranda') }}" wire:navigate class="flex gap-3 items-center h-full w-auto">
             <div class="flex p-2 bg-gray-200 shadow-sm rounded-lg">
                 <img src="{{ asset('img/logo.png') }}" alt="NusaWeb Studio Logo" class="h-7 w-7 object-contain">
             </div>
@@ -24,11 +33,22 @@ new class extends Component
 
         <!-- 02: Navigation Links -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="{{ route('beranda') }}" class="text-slate-600 hover:text-[#16375b] transition-colors">Home</a>
-            <a href="{{ route('about') }}" class="text-[#16375b] font-semibold border-b-2 border-[#138A63] pb-1">About</a>
-            <a href="{{ route('services') }}" class="text-slate-600 hover:text-[#16375b] transition-colors">Services</a>
-            <a href="{{ route('portfolio') }}" class="text-slate-600 hover:text-[#16375b] transition-colors">Portfolio</a>
-            <a href="{{ route('contact') }}" class="text-slate-600 hover:text-[#16375b] transition-colors">Contact</a>
+            @foreach ($this->menus() as $menu)
+                @php
+                    $isActive = request()->routeIs($menu['active']);
+                @endphp
+                <a 
+                    href="{{ route($menu['route']) }}" 
+                    wire:navigate
+                    @class([
+                        'pb-1 border-b-2 transition-colors',
+                        'text-[#16375b] font-semibold border-[#138A63]' => $isActive,
+                        'text-slate-600 border-transparent hover:text-[#16375b]' => ! $isActive,
+                    ])
+                >
+                    {{ $menu['label'] }}
+                </a>
+            @endforeach
         </nav>
 
         <!-- 03: CTA Button -->
