@@ -11,7 +11,7 @@ new class extends Component
 <section class="w-full text-slate-800">
 
     <!-- 1. HERO & STUDIO BLUEPRINT -->
-    <div class="bg-white">
+    <div class="bg-white py-10">
         <div class="w-[90%] lg:w-[84%] mx-auto">
             
             <!-- Intro Header -->
